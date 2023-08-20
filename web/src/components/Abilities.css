@@ -122,3 +122,61 @@
         }
     }
   
+    .feature .meetingpage{
+        /* grid-gap: 5em; */
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+    .feature .meetingtext{
+        margin-left: 4.5em;
+        background-size: cover;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 2em;
+        justify-content: end;
+        color: #fff;
+        font-size: 5px;
+    }
+    .feature .meetingtext h1{
+        color: tomato;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .feature .meetingtext h2{
+        color: white;
+        font-size: 16px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    .feature .meetingtext h3{
+        color: white;
+        font-size: 14px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .feature .video{
+        height: 450px;
+        width: 650px;
+        
+    }
+    @media  screen and (max-width: 960px) {
+        .feature .meetingpage{
+            display: flex;
+            flex-direction: column;
+        }
+        .feature .meetingtext{
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            font-size: 13px;
+        }
+        .feature .video{
+            width: 85%;
+            margin: auto;
+        }
+    }

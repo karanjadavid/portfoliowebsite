@@ -3,8 +3,13 @@ import Image from "../assets/o.jpg";
 import "./Abilities.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import VideoPlayer from 'react-video-js-player';
+import Video from './videos/Elevator.mp4';
+import backgroundvideo from './videos/backgroundvideo.png';
 
 const Abilities = () => {
+  const videoSrc = Video;
+  const poster = "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/msnbc/Components/Photos/061107/061107_stevejobs_hmed_12p.jpg"
   useEffect(() => {
     AOS.init();
   }, []);
@@ -57,25 +62,14 @@ const Abilities = () => {
           </div>
 
           <h1>Elevator Pitch</h1>
-          <div className="features-desc">
-            <div className="feature-icon">
-              <i className="fas fa-comment-dots"></i>
-            </div>
-            <div className="feature-text">
-              <p>
-                My name is David Mwangi. I am a professional data analyst with
-                over two years of experience solving business problems using
-                data in the financial and telecommunications industries. After
-                understanding my business problem, I easily manipulate my data
-                using Python, Excel, or SQL tools. I am a reliable team player
-                and a lifelong learner who enjoys taking on new challenges. If
-                you are looking for a super-efficient data analyst to handle
-                your data management and analytics ecosystem, look no further. I
-                will be delighted to walk you through the journey of deriving
-                value from the organizations’ data.
-              </p>
-            </div>
-          </div>
+          <div className='meetingpage'>  <div>
+          <VideoPlayer
+            src={videoSrc}
+            poster={backgroundvideo}
+            className='video'
+          />
+        </div>
+      </div>
         </div>
       </div>
     </div>
