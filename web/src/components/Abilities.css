@@ -178,5 +178,6 @@
         .feature .video{
             width: 85%;
             margin: auto;
+            margin-top: -105px;
         }
     }
